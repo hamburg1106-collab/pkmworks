@@ -1,0 +1,7 @@
+node_modules
+dist
+*.local
+*.local.json
+*.local.txt
+*.log
+.DS_Store

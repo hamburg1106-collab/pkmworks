@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PKM works｜AIで業務改善</title>
+    <meta name="description" content="スプレッドシートの集計や転記を、AIと一緒に自動化します。作ったものと、進め方。" />
+    <link rel="icon" type="image/png" href="./img/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Klee+One:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top">
+      <img class="face" src="./img/icon.png" alt="" width="96" height="96" />
+      <div>
+        <p class="name">PKM works</p>
+        <h1><span class="pen">スプレッドシートの<wbr />集計や<wbr />転記</span>を、<wbr />AIと一緒に<wbr />自動化します</h1>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>お手伝いできること</h2>
+        <ul class="can">
+          <li>スプレッドシートやフォームの入力、集計、転記の自動化</li>
+          <li>AIで文章を作ったり、写真や書類を読み取ったりする仕組み</li>
+          <li>業務に効く小規模なアプリの作成</li>
+        </ul>
+        <p>
+          作るときはAI（Claude Code）と一緒です。私の役目は、ユーザーの困りごとを聞いて、どこを楽にするか決めること。それから、出来上がりを確かめることです。AIを入れること自体を目的にはしたくないので、その作業に本当に効くところを一緒に探します。
+        </p>
+      </section>
+
+      <section>
+        <h2>作ったもの</h2>
+
+        <article class="work">
+          <p class="no">1</p>
+          <h3>G検定の1問1答アプリ（スマホ用・有料プランつき）</h3>
+          <div class="phones">
+            <div class="phone"><img src="./img/gken_question.png" alt="問題の画面。4つの選択肢から選ぶ" loading="lazy" /></div>
+            <div class="phone"><img src="./img/gken_answer_full.png" alt="解説の画面。選ばなかった選択肢の説明も出る" loading="lazy" /></div>
+          </div>
+          <p>通勤中にさくっと1問ずつ解ける、G検定の問題集アプリです。自分の勉強用に作って、公開しています。</p>
+          <ul>
+            <li>問題は348問。どれもAIと一緒に書き下ろした</li>
+            <li>解説では、選ばなかった3つの選択肢が何の用語かも1行ずつ説明</li>
+            <li>「自信がない」ボタン</li>
+            <li>模試は145問・100分と、通勤中にできる25分の2種類</li>
+            <li>有料プラン（動く図解など）は、決済のあとに出る解除コードで開く</li>
+          </ul>
+          <p class="used">使ったもの：Claude Code、React、TypeScript、GitHub Pages</p>
+          <p><a class="go" href="https://hamburg1106-collab.github.io/gken-drill/" target="_blank" rel="noopener">アプリを開く</a></p>
+        </article>
+
+        <article class="work">
+          <p class="no">2</p>
+          <h3>SNSの流行を毎朝集めて、週1で報告書にする仕組み</h3>
+          <div class="fig"><img src="./img/trend_research.png" alt="毎朝集める、中身を見る、報告書にする、の3段階の図" loading="lazy" /></div>
+          <p>自分用に毎日動かしている、流行の調査の仕組みです。</p>
+          <ul>
+            <li>YouTubeとXは公式のAPI、GoogleトレンドはRSSから、毎朝自動で集める</li>
+            <li>伸びている動画は、毎日PCからNotebookLMに読ませて中身を分析</li>
+            <li>日曜の朝に、その週の報告書をClaudeが書く</li>
+            <li>同じ仕組みで、売れているnoteの傾向も集める</li>
+          </ul>
+          <p class="used">使ったもの：GitHub Actions、Python、NotebookLM、Claude</p>
+        </article>
+
+        <article class="work">
+          <p class="no">3</p>
+          <h3>ニュースを毎朝集めて、10分ほどの音声番組にする仕組み</h3>
+          <div class="fig"><img src="./img/asa_radio.png" alt="3時すぎに起動、集めて台本に、読み上げる、の3段階の図" loading="lazy" /></div>
+          <p>自分用に毎朝作っている、ニュースの音声番組です。</p>
+          <ul>
+            <li>毎朝3時すぎに自動で動き出し、AI・テックと経済のニュースをRSSで集める</li>
+            <li>2人の掛け合いの台本にして、AIの声で読み上げる</li>
+            <li>朝には、その日の回がポッドキャストで聞ける</li>
+          </ul>
+          <p class="used">使ったもの：GitHub Actions、Python、Gemini</p>
+        </article>
+
+        <article class="work">
+          <p class="no">4</p>
+          <h3>本業の資料作成にAIを使い、作成時間を平均86.6%短縮</h3>
+          <p class="big"><span class="pen">−86.6%</span></p>
+          <p>
+            本業の職場で、資料作成にClaude（Genspark経由）を使った結果です。2026年5〜7月の22件を、AIを使う前の手作業の時間と比べています。画面は非公開のため、数字だけ載せます。
+          </p>
+          <ul>
+            <li>作成時間：平均86.6%短縮</li>
+            <li>差し戻し：1件あたり1.5回減</li>
+            <li>減らした時間：作業約48時間と差し戻しの対応14時間、合わせて約62時間</li>
+          </ul>
+          <p>
+            職場では、案文・添付資料の作成補助アプリと、座標計算の補助アプリも作りました。どちらも課題探しと企画から、使った人の声を受けた修正まで、ひとりで担当しました。
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>進め方</h2>
+        <ol class="steps">
+          <li>毎月手でやっている作業の中身を送ってもらう</li>
+          <li>動いている様子を録画した見本をお見せする</li>
+          <li>見本を見ながら、細かいところを決める</li>
+          <li>作って、お渡しする</li>
+        </ol>
+        <p class="fusen">本業があるので、作業とご連絡は平日の夜と土日です。打ち合わせはチャットか、夜・土日のオンラインでお願いします。</p>
+        <p>小さなものなら、見本を見てもらってからお見積もりします。</p>
+      </section>
+
+      <section id="contact">
+        <h2>ご相談はこちらから</h2>
+        <ul id="links" class="links"></ul>
+      </section>
+    </main>
+
+    <footer>PKM works｜AIで業務改善</footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
