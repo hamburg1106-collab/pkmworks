@@ -64,6 +64,15 @@ h1 {
   /* 折り返しは wbr を入れた文節の切れ目だけ */
   word-break: keep-all;
   overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.lead {
+  margin: 14px 0 0;
+  color: var(--sub);
+  font-size: 16px;
+  line-height: 1.8;
+  text-wrap: balance;
 }
 
 /* 赤ペンの下線（スライドと同じ線） */
